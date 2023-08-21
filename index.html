@@ -11,9 +11,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<style>
-		.font-work {
-			font-family: 'Work Sans';
-		}
+		* { color: #111; }
+		.font-work { font-family: 'Work Sans'; }
 	</style>
 </head>
 <body class="font-work bg-[#F8F8F8]">
@@ -33,11 +32,11 @@
 		</div>
 	</header>
 
-	<main class="max-w-[1366px] mx-auto py-20 grid lg:grid-cols-4 px-4 gap-x-4">
+	<main class="max-w-[1366px] mx-auto py-20 grid grid-cols-1 lg:grid-cols-4 px-4 gap-x-4">
 		<section class="col-span-3">
-			<h3 class="text-4xl font-semibold mb-8">Kitchenware</h3>
+			<h3 class="text-4xl font-semibold mb-10">Kitchenware</h3>
 			<div class="flex flex-col lg:flex-row gap-4">
-				<div id="k-accessories" class="card w-full bg-base-100 shadow-xl p-4 pb-0 mx-auto cursor-pointer">
+				<div id="k-accessories" class="card w-full bg-base-100 shadow-lg p-4 pb-0 mx-auto cursor-pointer hover:shadow-xl transition">
 					<figure class="px-10 py-10 bg-[#1111110D] rounded-b-2xl">
 						<img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
 					</figure>
@@ -53,7 +52,7 @@
 						<p class="text-lg">39.00 TK</p>
 					</div>
 				</div>
-				<div id="k-set" class="card w-full bg-base-100 shadow-xl p-4 pb-0 mx-auto">
+				<div id="k-set" class="card w-full bg-base-100 shadow-lg p-4 pb-0 mx-auto cursor-pointer hover:shadow-xl transition">
 					<figure class="px-10 py-10 bg-[#1111110D] rounded-b-2xl">
 						<img src="./images/prod2.png" alt="Shoes" class="rounded-xl" />
 					</figure>
@@ -69,7 +68,7 @@
 						<p class="text-lg">25.00 TK</p>
 					</div>
 				</div>
-				<div id="home-cooker" class="card w-full bg-base-100 shadow-xl p-4 pb-0 mx-auto">
+				<div id="home-cooker" class="card w-full bg-base-100 shadow-lg p-4 pb-0 mx-auto cursor-pointer hover:shadow-xl transition">
 					<figure class="px-10 py-10 bg-[#1111110D] rounded-b-2xl">
 						<img src="./images/prod3.png" alt="Shoes" class="rounded-xl" />
 					</figure>
@@ -87,19 +86,18 @@
 				</div>
 			</div>
 		</section>
-		<section class="col-span-1 mt-20 space-y-4">
-			<div class="card w-full bg-base-100 shadow-md">
+		<section class="col-span-1 mt-8 lg:mt-20 space-y-4 w-full">
+			<div class="card bg-base-100 shadow-md mx-auto">
 				<div class="card-body">
 					<h2 class="card-title text-2xl">Have Coupon?</h2>
 					<div class="join mt-2 overflow-hidden">
-						<input class="input input-bordered join-item text-lg w-44" placeholder="Coupon Code"/>
+						<input id="coupon-code" class="input input-bordered join-item text-lg w-44" placeholder="Coupon Code"/>
 						<button id="btn-apply" class="btn btn-neutral bg-[#E527B2] text-white border-0 join-item rounded-r-lg capitalize text-lg" disabled>Apply</button>
 					</div>
 				</div>
 			</div>
-			<div class="card w-full bg-base-100 shadow-md">
+			<div class="card bg-base-100 shadow-md">
 				<div id="cart-list" class="card-body pt-6 pb-0 text-xl font-medium">
-					<p></p>
 				</div>
 				<div class="divider px-6"></div>
 				<div class="card-body py-0">
