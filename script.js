@@ -68,3 +68,15 @@ document.getElementById("home-cooker").addEventListener("click", function () {
 	updateTotals(49);
 	appendToCart("Home Cooker");
 })
+document.getElementById("sports-cap").addEventListener("click", function () {
+	updateTotals(49);
+	appendToCart("Sports Back Cap");
+})
+document.getElementById("full-jersey").addEventListener("click", function () {
+	updateTotals(69);
+	appendToCart("Full Jersey Set");
+})
+document.getElementById("sports-skates").addEventListener("click", function () {
+	updateTotals(159);
+	appendToCart("Sports Skates");
+})
