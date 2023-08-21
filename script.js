@@ -80,3 +80,15 @@ document.getElementById("sports-skates").addEventListener("click", function () {
 	updateTotals(159);
 	appendToCart("Sports Skates");
 })
+document.getElementById("single-chair").addEventListener("click", function () {
+	updateTotals(185);
+	appendToCart("Single Relax Chair");
+})
+document.getElementById("children-toy").addEventListener("click", function () {
+	updateTotals(299);
+	appendToCart("Children's Toy");
+})
+document.getElementById("flexible-sofa").addEventListener("click", function () {
+	updateTotals(339);
+	appendToCart("Flexible Sofa");
+})
